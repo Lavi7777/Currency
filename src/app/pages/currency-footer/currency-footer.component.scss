@@ -1,0 +1,12 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  .select-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

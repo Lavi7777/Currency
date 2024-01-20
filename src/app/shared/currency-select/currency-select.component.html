@@ -1,0 +1,25 @@
+<div class="form-group">
+  <mat-form-field class="example-full-width">
+    <div class="select-panel">
+      <mat-label>{{ currencyLabel }}</mat-label>
+      <div class="select-container">
+        <mat-select [formControl]="currencyControl">
+          <mat-option
+            *ngFor="let currencyCode of currencyCodes"
+            [value]="currencyCode"
+          >
+            {{ dictinaryValues[currencyCode] }}
+          </mat-option>
+        </mat-select>
+      </div>
+    </div>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input
+      type="number"
+      [formControl]="valueControl"
+      class="form-control"
+      matInput
+    />
+  </mat-form-field>
+</div>

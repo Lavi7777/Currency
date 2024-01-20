@@ -1,0 +1,39 @@
+<div class="footer-container">
+  <form [formGroup]="currencyForm" (ngSubmit)="onSubmit(1)">
+    <div class="select-container">
+      <app-currency-select
+        currencyLabel="First currency"
+        [currencyControl]="currencyForm.controls.currencyFrom"
+        [valueControl]="currencyForm.controls.valueFrom"
+        [dictinaryValues]="currencyConstsTranferData"
+      ></app-currency-select>
+      <button
+        style="width: 140px"
+        mat-raised-button
+        type="submit"
+        color="primary"
+      >
+        First currency
+      </button>
+    </div>
+  </form>
+
+  <form [formGroup]="currencyForm" (ngSubmit)="onSubmit(2)">
+    <div class="select-container">
+      <app-currency-select
+        currencyLabel="Second currency"
+        [currencyControl]="currencyForm.controls.currencyTo"
+        [valueControl]="currencyForm.controls.valueTo"
+        [dictinaryValues]="currencyConstsTranferData"
+      ></app-currency-select>
+      <button
+        style="width: 140px"
+        mat-raised-button
+        type="submit"
+        color="primary"
+      >
+        Second currency
+      </button>
+    </div>
+  </form>
+</div>

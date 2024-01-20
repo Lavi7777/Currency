@@ -1,0 +1,12 @@
+<div class="header-container">
+  <h3>Exchange Rates</h3>
+  <div>
+    <ul style="list-style-type: none">
+      <li *ngFor="let currency of currencyArray">
+        {{ currencyService.getCurrencySymbol(currency.currencyCodeA) }} /
+        {{ currencyService.getCurrencySymbol(currency.currencyCodeB) }}: Buy:
+        {{ currency.rateBuy }}, Sell: {{ currency.rateSell }}
+      </li>
+    </ul>
+  </div>
+</div>

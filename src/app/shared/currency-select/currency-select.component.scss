@@ -1,0 +1,17 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  gap: 10px;
+  width: 100%;
+}
+
+.select-container {
+  max-width: 50px;
+  width: 100%;
+}
+
+.select-panel {
+  display: flex;
+  justify-content: space-between;
+}

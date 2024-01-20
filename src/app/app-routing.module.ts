@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CurrencyMainComponent } from '../app/pages/currency-main/currency-main.component';
 
-const routes: Routes = [];
+const routes: Routes = [{ path: '', component: CurrencyMainComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
